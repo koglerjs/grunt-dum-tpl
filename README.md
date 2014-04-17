@@ -12,7 +12,7 @@ npm install grunt-dum-tpl --save-dev
 
 ## The "dum_tpl" task
 
-This is a basic wrapper for the DUM templating library, which uses a minimal Mustache syntax.  Use this to package your templates into a javascript variable.  
+This is a basic wrapper for the [DUM templating library](https://github.com/koglerjs/dum-tpl), which uses a minimal Mustache syntax.  Use this to package your templates into a javascript variable.  
 
 Note that DUM, at 0.0.6, makes several naive/idiotic assumptions, such as: none of your templates have the same name.  
 
