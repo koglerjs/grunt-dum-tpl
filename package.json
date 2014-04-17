@@ -1,8 +1,8 @@
 {
 	"name": "grunt-dum-tpl",
 	"description": "A plugin to run the DUM template parser for a web application's templates and package them to be used in the client.",
-	"version": "0.0.1",
-	"homepage": "https://github.com/jimkogler/grunt-dum-tpl",
+	"version": "0.0.2",
+	"homepage": "https://github.com/koglerjs/grunt-dum-tpl",
 	"author": {
 		"name": "Jim Kogler",
 		"email": "koglerjs@gmail.com",
@@ -10,14 +10,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/jimkogler/grunt-dum-tpl.git"
+		"url": "git://github.com/koglerjs/grunt-dum-tpl.git"
 	},
 	"bugs": {
-		"url": "https://github.com/jimkogler/grunt-dum-tpl/issues"
+		"url": "https://github.com/koglerjs/grunt-dum-tpl/issues"
 	},
 	"licenses": [{
 		"type": "MIT",
-		"url": "https://github.com/jimkogler/grunt-dum-tpl/blob/master/LICENSE-MIT"
+		"url": "https://github.com/koglerjs/grunt-dum-tpl/blob/master/LICENSE-MIT"
 	}],
 	"engines": {
 		"node": ">= 0.8.0"
@@ -26,7 +26,7 @@
 		"test": "grunt test"
 	},
 	"dependencies" : {
-		"dum-tpl" : "~0.0.4"
+		"dum-tpl" : "~0.0.6"
 	},
 	"devDependencies": {
 		"grunt-contrib-jshint": "~0.6.0",

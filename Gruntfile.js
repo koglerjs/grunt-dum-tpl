@@ -5,24 +5,33 @@
  * Copyright (c) 2014 Jim Kogler
  * Licensed under the MIT license.
  */
-
-'use strict';
-
 module.exports = function(grunt) {
-
+  "use strict";
   // Project configuration.
   grunt.initConfig({
-
+    jshint : {
+      all : ["Gruntfile.js", "tasks/*.js"],
+      options: {
+        jshintrc: '.jshintrc'
+      }
+    },
     "dum_tpl": {
         main: { 
         options: {
-          tplLib : "tpls"
+          varName : "tpls",
+          notGlobal: true
         },
         files: [{
           src : "test/fixtures/**/*.tpl",
-          dest: "test/tpls.js"
+          dest: "tmp/tpls.js"
         }]
       }
+    },
+    clean : {
+      tests : ["tmp"]
+    },
+    nodeunit: {
+      tests: "test/*_test.js"
     }
 
   });
@@ -35,6 +44,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('test', ['clean', 'dum_tpl', 'nodeunit']);
 
-  grunt.registerTask('default', ['dum_tpl']);
+  grunt.registerTask('default', ['jshint', 'test']);
 
 };

@@ -1,0 +1,1 @@
+<p>All rights reserved by {{copyrightholder}}, at least until copyright reform gains traction.</p>

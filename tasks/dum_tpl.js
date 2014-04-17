@@ -1,6 +1,5 @@
-'use strict';
-
 module.exports = function(grunt) {
+	'use strict';
 	var dum = require("dum-tpl");
 	var path = require("path");
 
@@ -23,7 +22,7 @@ module.exports = function(grunt) {
 					return false;
 				} 
 				else {
-					tpl = grunt.file.read(src[i])
+					tpl = grunt.file.read(src[i]);
 
 					key = path.basename(src[i]).split(".");
 					key.pop();
@@ -33,11 +32,11 @@ module.exports = function(grunt) {
 				}
 			}			
 
-			var out = dum.packageToString(options, "__grunt")
+			var out = dum.packageToString(options, "__grunt");
 
 			grunt.file.write(f.dest, out);
 
 			grunt.log.writeln('File ' + f.dest + ' created.');
 		});
 	});
-}
+};
